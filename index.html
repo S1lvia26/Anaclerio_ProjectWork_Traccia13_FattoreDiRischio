@@ -11,7 +11,8 @@
     rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     
-
+    <!-- Libreria QR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
      <!-- My style css -->
     <link rel="stylesheet" href="">
 
@@ -82,9 +83,10 @@
                 <i class="p-5 mx-auto fs-3 bi bi-calculator"></i>
                 <div class="card-body">
                     <h5 class="card-title">Risk Factor Calculator</h5>
-                    <p class="card-text">Calcola qui il fattore di rischio della tua azienda</p>
+                    <p class="card-text"><a href="matrice.html">Calcola qui il fattore di rischio della tua azienda</a></p>
                 </div>
-                <a class="p-5 mx-auto h-100" href=""><i class="display-3 bi bi-qr-code"></i></a>
+                <div id="qrcode"></div>
+                <!--<a class="p-5 mx-auto h-100" href=""><i class="display-3 bi bi-qr-code"></i></a>-->
             </div>
         </div>
         <div class="col">
@@ -111,5 +113,8 @@
    <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-
     kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+    <!--my Script JS-->
+    <script src="myScript.js"></script>
+
 </body>
 </html>
