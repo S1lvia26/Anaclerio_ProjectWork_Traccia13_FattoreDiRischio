@@ -15,99 +15,89 @@
     <!-- Libreria QR -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
      <!-- My style css -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="myStyle.css">
 
 </head>
 <body class="d-flex flex-column min-vh-100"> 
     
     <!--Navbar-->
 
-    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-success">
-        
-            <a class="navbar-brand text-white" href="#">Azienda X</a>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white ms-2" href="#">Risk Consulting</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                    </li>
-            
-                    <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="chiSiamo.html">Chi Siamo</a>
-                    </li>
-                
-                
-                    <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="contattaci.html">Contattaci</a>
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
                     </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documentazione</a>
-                    <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="">Fattore rischio</a></li>
-                    </ul>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documento PDF</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li class="nav-item"><a class="dropdown-item" target="_blank" href="criteri di valutazione.pdf">Apri</a></li>
+                        </ul>
+                    </li>
                 
                 </ul>
             </div>
-       
+        </div>
     </nav>
 
-
     <!--Header-->
-    <div class=" container overflow-hidden p-3 my-5 p-md-5 text-center bg-light border border-3 border-success">
-        <div class="col-md-5 p-3 p-lg-3 mx-auto">
-            <h1 class="display-4 fw-normal">RISK MANAGEMENT</h1>
-            <p class="lead fw-normal">Azienda X è la piattaforma intelligente che ti permette di identificare, valutare e gestire i rischi aziendali in tempo reale, con strumenti avanzati e consulenza esperta.</p>
-            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <div class="container overflow-hidden p-3 my-5 p-md-5 text-center bg-light border border-3 border-success">
+        <div class="col-3 col-md-9 p-3 p-lg-3 mx-auto">
+            <h1 class="fs-1 fw-normal">CASO STUDIO</h1>
+            <p class="lead fw-normal">Risk Consulting è una piattaforma che ti aiuta ad identificare, valutare e gestire i rischi aziendali in tempo reale, con strumenti avanzati e consulenza esperta. Forniamo come esempio del nostro lavoro il caso di una scuola primaria il cui dirigente (Datore di Lavoro) deve rispondere all'obbligo della presentazione del DVR (Documento di Valutazione del Rischio) introdotto dal D.Lgs.81/08 (Testo Unico sulla Sicurezza).
+            Nelle prossime sezioni troverete a disposizione un PDF esplicativo che fornirà una guida pratica alla compilazione del DVR e una pagina predisposta alla visualizzazione di un esempio di matrice di rischio dove l'utente può inserire In autonomia dei parametri e calcolarne il risultato immediato.</p>
         </div>
     </div>
 
 
     <!--Sezione card Servizi-->
    
-    <div class="container-fluid row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <i class="p-5 mx-auto fs-3 bi bi-bar-chart-line"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Mappa Completa dei Tuoi Rischi</h5>
-                    <p class="card-text">Trasforma i dati in decisioni strategiche. Le nostre dashboard intuitive offrono una visione chiara e immediata dei rischi aziendali, mentre lo storico dettagliato degli interventi ti garantisce controllo e governance, ovunque si trovino le tue sedi.</p>
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-auto mb-3">
+            <div class="col-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center p-5">CASO STUDIO</h5>
+                        <p class="card-text text-center">Trattiamo il caso di una scuola primaria il cui dirigente deve rispondere all'obbligo della presentazione del DVR (documento di valutazione del fattore di rischio) introdotto dal D. Lgs. 81/08 (Testo Unico sulla Sicurezza)</p>
+                    </div>
+                    <i class="p-5 mx-auto fs-1 bi bi-book"></i>
                 </div>
-                
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center p-5">CALCOLATORE</h5>
+                        <p class="card-text text-center"><a href="matrice.html">Clicca qui o scansiona il qr code per eseguire un test di calcolo del fattore di rischio della tua azienda</a></p>
+                    </div>
+                    <div id="qrcode" class="mb-2 d-flex justify-content-md-center"></div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center p-5">FATTORE DI RISCHIO</h5>
+                        <p class="card-text text-center">Mettiamo a disposizione un documento esplicativo consultabile contenente tutte le indicazioni alle normative e la guida all'individuazione e al calcolo del rischio</p>
+                    </div>
+                    <a class="d-flex flex-column align-items-center p-4" target="_blank" href="criteri di valutazione.pdf">
+                        <i class="fs-1 bi bi-filetype-pdf"></i>
+                        <h4 class="text-center">Accedi al documento PDF</h4>
+                    </a>                 
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <i class="p-5 mx-auto fs-3 bi bi-calculator"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Risk Factor Calculator</h5>
-                    <p class="card-text"><a href="matrice.html">Calcola qui il fattore di rischio della tua azienda</a></p>
-                </div>
-                <div id="qrcode"></div>
-                <!--<a class="p-5 mx-auto h-100" href=""><i class="display-3 bi bi-qr-code"></i></a>-->
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <i class="p-5 mx-auto fs-3 bi bi-clipboard-data"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Riduzione tempi e costi</h5>
-                    <p class="card-text">Centralizza la gestione del rischio per la tua Azienda distribuita su più sedi. Riduci i tempi di assessment e abbatti i costi operativi con processi standarizzati.</p>
-                </div>
-            
-            </div>
-        </div>
-        
     </div>
   
 
 
      <!-- FOOTER -->
-    <footer class="bg-secondary text-white text-center py-3 mt-auto">
-        <p class="mb-0">© 2025 Azienda X - Tutti i diritti riservati</p>
+    <footer class="text-white text-center py-2 mt-auto">
+        <p class="mb-0">© 2025 Risk Consulting - Tutti i diritti riservati</p>
     </footer>
 
 
