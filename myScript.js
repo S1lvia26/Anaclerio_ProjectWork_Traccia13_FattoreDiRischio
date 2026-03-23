@@ -25,8 +25,48 @@ document.addEventListener("DOMContentLoaded", function() {
             // Calcola il rischio
             const rischio = probabilita * gravita;
 
+            console.log(rischio);
+             // Calcola l'entità del danno
+
+            let entità="";
+            
+            switch(true) {
+                case (rischio < 1):
+                    entità = "Assente";
+                    break;
+                case (rischio == 1):
+                    entità= "Minimo";
+                    //row.querySelector("input.entità").value = entità;
+                    break;
+                case (rischio >=2 && rischio <=3):
+                    entità = "Basso";
+                    break;
+                case (rischio >=4 && rischio <=6):
+                    entità = "Medio";
+                    break;
+                case (rischio >=8 && rischio <=9):
+                    entità = "Medio Alto";
+                    break;
+                case (rischio > 9):
+                    entità = "Alto";
+                    break;
+                default:
+                    entità = "";
+            }
+          
+            
+
             // Aggiorna l'input della colonna rischio
             row.querySelector("input.rischio").value = rischio;
+            // ritarda entità
+            setTimeout(() => {
+                row.querySelector("input.entità").value = entità;
+            }, 300);
+            
+            //row.querySelector("input.entità").value = entità;
+            
+
+           
 
         });
     });
