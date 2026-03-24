@@ -63,7 +63,10 @@ a:hover{
         width: 100%; /* la select prende tutta la cella */
     }
 
-    
+    .touch{
+        color: #34a0a4;
+        text-decoration: underline;
+    }
 
 }
 
