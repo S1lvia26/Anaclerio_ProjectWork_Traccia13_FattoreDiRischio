@@ -22,7 +22,7 @@
 
     <nav class="container-fluid navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white ms-2" href="#">Risk Consulting</a>
+            <a class="navbar-brand text-white ms-2" href="index.html">Risk Consulting Lab</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,7 +35,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documento PDF</a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li class="nav-item"><a class="dropdown-item" target="_blank" href="criteri di valutazione.pdf">Apri</a></li>
+                            <li class="nav-item"><a class="dropdown-item" target="_blank" href="PDF informativo.pdf">Apri</a></li>
                         </ul>
                     </li>
                 
@@ -44,21 +44,25 @@
         </div>
     </nav>
 
-    <!--form-->
+    <!--form table-->
 
     <div class="container-fluid mb-3">
         <div class="row justify-content-md-center flex-column align-items-center">
-            <div class="col col-md-8 mt-5 ">
-                <h2>Esempio di calcolo della matrice di rischio. </h2>
-                <p class="title">Si considera lo scenario di analisi delle attività di laboratorio a cui partecipano gli studenti di una scuola: sulla colonna a sinistra troviamo i possibili eventi che possono causare uno scenario di pericolo durante lo svolgimento di attività di laboratorio, mentre sulle righe a destra la scelta del grado di probabilità con cui l'evento può manifestarsi e soprattutto con quale entità.</p>
-                <p class="title">La formula che calcola il Rischio R è data dalla moltiplicazione del valore della probabilità P per il valore della gravità del danno D.</p>
-                <h3 class="fs-5 p-2 text-center">R = P x D</h3>
+            <div class="col col-md-11 mt-5 ">
+                <h2 class="mb-2">Analisi del Contesto - Demo Matrice del Rischio</h2>
+                <p class="title p-2">In questa sezione viene realizzato un caso reale tratto da una sezione di un <span class="corsivo">Documento di Valutazione dei Rischi (DVR)</span>, redatto dal dirigente scolastico, nella sua parte relativa alle attività di laboratorio svolte dagli studenti in orario scolastico.
+                L’attività presa in esame prevede nello specifico l’utilizzo di strumenti e materiali che possono comportare rischi per la sicurezza degli studenti, rendendo necessaria una valutazione basata sui parametri fondamentali di probabilità e gravità del danno.
+                Nella struttura della matrice di rischio vengono riportati: nella colonna verticale situata a sinistra i possibili eventi che possono generare situazioni di pericolo durante lo svolgimento delle attività; nelle colonne successive vengono invece definiti il grado di probabilità con cui tali eventi possono verificarsi, la gravità del pericolo associato, il livello di rischio derivante dal calcolo e la sua relativa classificazione qualitativa.</p>
+                <p class="title p-2">L'utente è ora invitato ad assegnare valori diversi alle varie aree presenti e a percepire immediatamente le variazioni dell'entità del rischio in base al calcolo effettuato dal nostro programma.<br/>
+                La formula che sottende al calcolo del <span class="corsivo">Rischio R</span> è data dalla moltiplicazione del valore della <span class="corsivo">Probabilità P</span class="corsivo"> per il valore della <span class="corsivo">Gravità del Danno D</span>.</p>
+
+                <h3 class="fs-5 p-2 text-center mt-2">R = P x D</h3>
             </div>
-            <div class=" col col-md-8 mt-3">
-                <table class="table-responsive">
+            <div class=" col col-md-8 mt-4 mb-5">
+                <table class="table-responsive bordo">
                     <thead class="event">
                         <tr>
-                            <th scope="col" class="w-20"></th>
+                            <th scope="col" class="w-20 intersezione"></th>
                             <th scope="col" class="w-20 text-center pb-3">Probabilità</th>
                             <th scope="col" class="w-20 text-center pb-3">Danno</th>
                             <th scope="col" class="w-20 text-center pb-3">Rischio</th>
@@ -212,7 +216,7 @@
    
     <!-- FOOTER -->
     <footer class="text-white text-center py-2 my-0 mt-auto">
-        <p class="mb-0">© 2025 Risk Consulting - Tutti i diritti riservati</p>
+        <p class="mb-0">© 2026 Risk Consulting Lab - Tutti i diritti riservati</p>
     </footer>
 
    <!-- Bootstrap javascript -->

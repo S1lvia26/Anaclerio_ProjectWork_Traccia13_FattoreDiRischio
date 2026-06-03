@@ -1,10 +1,4 @@
-/*
 
-.sfondo{
-    background-color: rgba(250, 241, 231, 0.696);
-}
-
-*/
 
 body{
     background-color:#edf2fb;
@@ -17,8 +11,8 @@ body{
 .title{
     font-size:15px;
     font-weight:600;
-    font-family:'Times New Roman', Times, serif
-    
+    /*font-family:'Times New Roman', Times, serif;*/
+    color: #103054;
 }
 
 tbody tr:hover{
@@ -29,7 +23,12 @@ footer{
     background-color:#34a0a4;
 }
 
-h3{
+.testo, h1, h5{
+    color: #11345b;
+}
+
+h2,h3,.corsivo{
+    color: #11345b;
     font-weight: bold;
 }
 
@@ -53,22 +52,76 @@ a:hover{
     td, th {
         padding: 4px !important;
         font-size: 13px;
-         width: 20%;
+        width: 20%;
     }
 
     .form-select-sm, .form-control {
         font-size: 13px;
         padding: 2px 4px;
         display: block;
-        width: 100%; /* la select prende tutta la cella */
+        width: 100%;  /*la select prende tutta la cella */
     }
 
     .touch{
-        color: #34a0a4;
+        /*color: #11345b;*/
         text-decoration: underline;
     }
 
 }
+
+
+/* =========================
+   TABELLA (utile per matrice)
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #34a0a4;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #E9F2FB;
+}
+
+
+.rischioBasso {
+    background-color: #52b788; 
+    color: white;
+}
+
+.rischioMedio {
+    background-color: #ffca3a; 
+}
+
+.rischioMedioAlto {
+    background-color: #ef8307; 
+}
+
+.rischioAlto {
+    background-color: #e63946; 
+    color: white;
+}
+
+.intersezione{
+    background-color:#70a8aba5;
+    
+}
+
+.bordo{
+    border: 3px solid #34a0a4;
+}
+
+
 
 
     

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             text: "https://s1lvia26.github.io/Basic_calculator_test/esercizio12/ciao.html",  // da aggiustare link e fare git pages
             width: 150,
             height: 150,
-            colorDark: '#34a0a4'
+            colorDark: '#153e6c'
             
             
         });
@@ -27,49 +27,61 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Calcola il rischio
             const rischio = probabilita * gravita;
-
             console.log(rischio);
+          
              // Calcola l'entità del danno
-
             let entità="";
-            
+
             switch(true) {
                 case (rischio < 1):
-                    entità = "Assente";
+                    entità = "Assente";                  
                     break;
                 case (rischio == 1):
-                    entità= "Minimo";
-                    //row.querySelector("input.entità").value = entità;
+                    entità= "Minimo";                  
                     break;
                 case (rischio >=2 && rischio <=3):
-                    entità = "Basso";
+                    entità = "Basso";                
                     break;
                 case (rischio >=4 && rischio <=6):
-                    entità = "Medio";
+                    entità = "Medio";                   
                     break;
                 case (rischio >=8 && rischio <=9):
-                    entità = "Medio Alto";
+                    entità = "Medio Alto";                  
                     break;
                 case (rischio > 9):
-                    entità = "Alto";
+                    entità = "Alto";                  
                     break;
                 default:
                     entità = "";
             }
-          
-            
 
             // Aggiorna l'input della colonna rischio
             row.querySelector("input.rischio").value = rischio;
-            // ritarda entità
-            setTimeout(() => {
-                row.querySelector("input.entità").value = entità;
-            }, 300);
             
-            //row.querySelector("input.entità").value = entità;
-            
+            let enty = row.querySelector("input.entità");
+            enty.value= entità;
 
-           
+            
+            // pulizia classi
+            enty.classList.remove(
+                "rischioBasso",
+                "rischioMedio",
+                "rischioMedioAlto",
+                "rischioAlto"
+            );
+
+        
+            if(enty.value == "Basso" || enty.value == "Assente" || enty.value == "Minimo"){
+                enty.classList.add("rischioBasso");   
+            }else if(enty.value == "Medio"){
+               enty.classList.add("rischioMedio"); 
+            }else if (enty.value == "Medio Alto"){
+                enty.classList.add("rischioMedioAlto"); 
+            }else if(enty.value == "Alto"){
+                enty.classList.add("rischioAlto"); 
+            }else{
+                enty.value="";
+            } 
 
         });
     });
