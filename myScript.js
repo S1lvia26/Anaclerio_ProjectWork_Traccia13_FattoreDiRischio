@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if(qrElement){
         // codice generazione QR
         new QRCode(document.getElementById("qrcode"), {
-            text: "https://s1lvia26.github.io/Anaclerio_ProjectWork_Traccia13_FattoreDiRischio/pdf_informativo.pdf",
+            text: "https://s1lvia26.github.io/Anaclerio_ProjectWork_Traccia13_FattoreDiRischio/PDF_Informativo.pdf",
             width: 150,
             height: 150,
             colorDark: '#153e6c'
