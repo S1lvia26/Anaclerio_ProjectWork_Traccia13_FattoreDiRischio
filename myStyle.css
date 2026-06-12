@@ -63,11 +63,14 @@ table {
         display: block;
         width: 100%;  
     }
+
     
-    a {
-        color: #a43434 !important;
+    a:link,
+    a:visited {
+        color: #34a0a4;
         text-decoration: underline;
     }
+
 }
 
 /* -- TABELLA MATRICE_Gestione Style -- */
