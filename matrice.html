@@ -50,17 +50,43 @@
 
     <div class="container-fluid mb-3">
         <div class="row justify-content-md-center flex-column align-items-center">
-            <div class="col col-md-11 mt-5 ">
-                <h2 class="mb-2">Analisi del Contesto - Demo Matrice del Rischio</h2>
-                <p class="title p-2">In questa sezione viene realizzato un caso reale tratto da una sezione di un <span class="corsivo">Documento di Valutazione dei Rischi (DVR)</span>, redatto dal dirigente scolastico, nella sua parte relativa alle attività di laboratorio svolte dagli studenti in orario scolastico.
-                L’attività presa in esame prevede nello specifico l’utilizzo di strumenti e materiali che possono comportare rischi per la sicurezza degli studenti, rendendo necessaria una valutazione basata sui parametri fondamentali di probabilità e gravità del danno.
-                Nella struttura della matrice di rischio vengono riportati: nella colonna verticale situata a sinistra i possibili eventi che possono generare situazioni di pericolo durante lo svolgimento delle attività; nelle colonne successive vengono invece definiti il grado di probabilità con cui tali eventi possono verificarsi, la gravità del pericolo associato, il livello di rischio derivante dal calcolo e la sua relativa classificazione qualitativa.</p>
-                <p class="title p-2">L'utente è ora invitato ad assegnare valori diversi alle varie aree presenti e a percepire immediatamente le variazioni dell'entità del rischio in base al calcolo effettuato dal nostro programma.<br/>
-                La formula che sottende al calcolo del <span class="corsivo">Rischio R</span> è data dalla moltiplicazione del valore della <span class="corsivo">Probabilità P</span class="corsivo"> per il valore della <span class="corsivo">Gravità del Danno D</span>.</p>
+            <div class="col-12 col-md-11">
+                <h2 class="mb-3 mt-3 text-center corsivo">Demo Matrice del Rischio</h2>
+                <div class="card shadow-sm p-3 mb-3">
+                    <p class="mb-1"><span class="corsivo">Analisi del contesto</span></p>
+                    <p class="mb-2">
+                       In questa sezione viene realizzato un caso reale tratto da una sezione del <span class="corsivo">Documento di Valutazione dei Rischi (DVR)</span>, redatto dal dirigente scolastico, nella sua parte relativa alle attività di laboratorio svolte dagli studenti in orario scolastico.
+                       L’attività presa in esame prevede nello specifico l’utilizzo di strumenti e materiali che possono comportare rischi per la sicurezza degli studenti, rendendo necessaria una valutazione basata sui parametri fondamentali di probabilità e gravità del danno.
+                       Nella struttura della matrice di rischio vengono riportati: nella colonna verticale situata a sinistra i possibili eventi che possono generare situazioni di pericolo durante lo svolgimento delle attività; nelle colonne successive vengono invece definiti il grado di probabilità con cui tali eventi possono verificarsi, la gravità del pericolo associato, il livello di rischio derivante dal calcolo e la sua relativa classificazione qualitativa.
+                    </p>
+                </div>
 
-                <h3 class="fs-5 p-2 text-center mt-2">R = P x D</h3>
+                <div class="card shadow-sm p-3 mb-3">
+                    <p class="mb-1"><span class="corsivo">Come funziona</span></p>
+                    <p class="mb-2">
+                    L'utente è ora invitato ad assegnare valori diversi alle varie aree presenti e a percepire immediatamente le variazioni dell'entità del rischio in base al calcolo effettuato dal nostro programma.<br/>
+                    La formula che sottende al calcolo del <span class="corsivo">Rischio R</span> è data dalla moltiplicazione del valore della <span class="corsivo">Probabilità P</span class="corsivo"> per il valore della <span class="corsivo">Gravità del Danno D</span>.
+                    </p>
+                    <ul class="small mb-0">
+                        <li class="corsivo">Seleziona Probabilità (P)</li>
+                        <li class="corsivo">Seleziona Danno (D)</li>
+                        <li class="corsivo">Calcolo automatico del Rischio (R)</li>
+                    </ul>
+                   
+
+                </div>
+
+                <div class="alert alert-light border text-center mt-3">
+                    <p class="mb-1 corsivo">Formula di calcolo</p>
+                    <p class="mb-1"></p><span class="corsivo">R = P × D</span></p>
+                </div>
+                
+
             </div>
             <div class=" col col-md-8 mt-4 mb-5">
+                <p class="text-center small text-muted mb-2">
+                    Seleziona i valori per visualizzare il rischio
+                </p>
                 <table class="table-responsive bordo">
                     <thead class="event">
                         <tr>
