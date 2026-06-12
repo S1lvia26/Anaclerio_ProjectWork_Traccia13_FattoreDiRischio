@@ -44,6 +44,7 @@ a:hover{
     text-decoration: underline;
 }
 
+
 .w-20 {
     width: 20%;
 }
@@ -63,7 +64,6 @@ a:hover{
     }
 
     .touch{
-        /*color: #11345b;*/
         text-decoration: underline;
     }
 
@@ -118,7 +118,7 @@ tbody tr:hover {
 }
 
 .bordo{
-    border: 3px solid #34a0a4;
+    border: 3px solid #34a0a4 !important;
 }
 
 
