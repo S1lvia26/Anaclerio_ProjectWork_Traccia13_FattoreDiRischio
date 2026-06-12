@@ -65,7 +65,7 @@ table {
     }
     
     a {
-        color: #34a0a4;
+        color: #34a0a4 !important;
         text-decoration: underline;
     }
 }
